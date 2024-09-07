@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        {% for food in food %}
+        <div class="col-md-4 mb-4">
+            <div class="card" style="width: 100%; background-color: lightgoldenrodyellow; border: 1px solid #ccc;">
+                <img src="{{ food.image }}" class="card-img-top" alt="{{ food.name }}" style="height: 15rem; object-fit: cover;">
+                <div class="card-body" style="background-color: rgba(250, 235, 215, 0.75);">
+                    <h5 class="card-title">{{ food.name }}</h5>
+                    <p class="card-text">R{{ food.price }}</p>
+                    <a href="#" class="btn btn-primary" style="background-color: rgb(223, 224, 218); border-color: aliceblue; color: black;">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    {% if user.is_authenticated %}
+    <div class="mt-4">
+        <p>Hi, {{ user.username }} :)</p>
+        <p><a href="{% url 'login' %}">Log Out</a></p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
