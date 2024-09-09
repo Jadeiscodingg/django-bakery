@@ -1,6 +1,11 @@
 # Bakery Django Application
 
 ## Setup Virtual Environment (venv)
+Things to take note of:
+- apply migrations using this command : python manage.py makemigrations or python manage.py makemigrations shop
+  Once you do that apply python manage.py migrate, there will be no operational errors an the pp should open as expected.
+
+- The home.html needed a change by line 6 of the for loop.
 
 1. Navigate to the project directory:
 
@@ -38,18 +43,7 @@
     python manage.py runserver
     ```
 
-## Running the Application with Docker
+Check Screenshots folder of the app
 
-1. Build the Docker image:
 
-    ```bash
-    docker build -t bakery-django-app .
-    ```
 
-2. Run the Docker container:
-
-    ```bash
-    docker run -p 8000:8000 bakery-django-app
-    ```
-
-The application should now be accessible at `http://localhost:8000`.
