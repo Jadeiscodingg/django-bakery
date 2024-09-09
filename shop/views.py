@@ -6,9 +6,17 @@ from .models import Food
 @login_required
 def home(request):
     """
-    This is the home page which contains all my objects.
-    In my home html page would contain the images ect.
-    food is the variable that holds all the objects set from my model Food.
+    Render the home page displaying all food objects.
+
+    This view is decorated with 'login_required' to ensure that only authenticated
+    users can access it. It retrieves all 'Food' objects from the database and passes 
+    them to the 'home.html' template.
+
+    Args:
+        request (HttpRequest): The request object used to generate the reponse.
+
+    Returns:
+        HttpResponse: The rendered 'home.html' template with the food objects.
     """
     food = Food.objects.all()
     return render(request, 'home.html', {'food': food})
