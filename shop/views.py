@@ -18,7 +18,7 @@ def home(request):
     Returns:
         HttpResponse: The rendered 'home.html' template with the food objects.
     """
-    food = Food.objects.all()
-    return render(request, 'home.html', {'food': food})
+    foods = Food.objects.all()
+    return render(request, 'home.html', {'foods': foods})
 
 
