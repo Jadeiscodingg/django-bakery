@@ -1,12 +1,11 @@
 shop package
-=============
+============
 
 Submodules
 ----------
 
 shop.admin module
 -----------------
-
 .. automodule:: shop.admin
    :members:
    :undoc-members:
@@ -14,7 +13,6 @@ shop.admin module
 
 shop.apps module
 ----------------
-
 .. automodule:: shop.apps
    :members:
    :undoc-members:
@@ -22,7 +20,6 @@ shop.apps module
 
 shop.forms module
 -----------------
-
 .. automodule:: shop.forms
    :members:
    :undoc-members:
@@ -30,7 +27,6 @@ shop.forms module
 
 shop.migrations module
 ----------------------
-
 .. automodule:: shop.migrations
    :members:
    :undoc-members:
@@ -38,7 +34,6 @@ shop.migrations module
 
 shop.models module
 ------------------
-
 .. automodule:: shop.models
    :members:
    :undoc-members:
@@ -46,7 +41,6 @@ shop.models module
 
 shop.tests module
 -----------------
-
 .. automodule:: shop.tests
    :members:
    :undoc-members:
@@ -54,7 +48,6 @@ shop.tests module
 
 shop.urls module
 ----------------
-
 .. automodule:: shop.urls
    :members:
    :undoc-members:
@@ -62,7 +55,6 @@ shop.urls module
 
 shop.views module
 -----------------
-
 .. automodule:: shop.views
    :members:
    :undoc-members:
@@ -70,8 +62,8 @@ shop.views module
 
 Module contents
 ---------------
-
 .. automodule:: shop
    :members:
    :undoc-members:
    :show-inheritance:
+
