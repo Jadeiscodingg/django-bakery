@@ -1,0 +1,5 @@
+Docker Hub Link:
+https://hub.docker.com/r/jade399/django-app
+
+Docker Image Tag:
+v1
