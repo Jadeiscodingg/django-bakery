@@ -5,13 +5,12 @@ from .models import Food
 
 class FoodAdmin(admin.ModelAdmin):
     """
-    I added class FoodAdmin in the admin page so i could use list display.
+    Admin interface options for the Food model.
+
+    This class customizes the admin interface for the Food model, allowing the name, price
+    and qauntity fields to be displayed in the list view of the admin panel.
     """
     list_display = ('name', 'price', 'quantity')
 
-
-
-"""
-registered my classes Food and FoodAdmin.
-"""
+# Register the Food model an its customized admin interface (FoodAdmin)
 admin.site.register(Food, FoodAdmin)

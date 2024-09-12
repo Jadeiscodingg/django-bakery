@@ -12,6 +12,11 @@ def login_req(request):
     Once user logs in it should authenticate the user.
     If the user is a verified registered user it should return to home page.
     If user is not registered an tries to log in it should give a error message.
+
+    :param request: The HTTP request object
+    :type request: HTTPRequest
+    :returns: HTTP response to either the home page or login page with an error message
+    :rtype: HttpResponse
     """
     if request.method == 'POST':
         username = request.POST.get('username')
@@ -26,16 +31,23 @@ def login_req(request):
 
 
 def register(request):
+    """
+    Handle user registration and login.
+
+    Processes the registration form, saves the new user if the form is valid, and 
+    logs them in. If the form is invalid, displays an error messsage. After a succesful
+    registration, the user is redirected to the home page.
+
+    :param request: The HTTP request object
+    :type request: HttpRequest
+    :returns: HTTP reponse to either the home page or registration page with errors.
+    :rtype: HttpResponse
+    """
     if request.method == 'POST':
         form = MyUserCreationForm(request.POST)
         if form.is_valid():
             user = form.save()
             login(request, user)
-            """
-            If the user registers successfully the data should be saved.
-            It should let the user login.
-            Logged in, should return to the home page of the site.
-            """
             return redirect('home')
         else:
             messages.error(request, 'Please correct the errors below')
