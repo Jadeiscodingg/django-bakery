@@ -9,8 +9,10 @@ class ShopConfig(AppConfig):
     including settings for the default auto field type used for models.
 
     Attributes:
-        default_auto_field (str): The type of auto field to use for models in the application.
-        name (str): The name of the application.
+    :param default_auto_field: The type of auto field to use for models on the application
+    :type default_auto_fields: str
+    :param name: The name of the application
+    :type name: str
     """
     default_auto_field = 'django.db.models.BigAutoField'
     name = 'shop'

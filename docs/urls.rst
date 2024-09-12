@@ -1,7 +1,8 @@
 urls module
 ===========
 
-.. automodule:: urls
+.. automodule:: shop.urls
    :members:
    :undoc-members:
    :show-inheritance:
+   :no-index:

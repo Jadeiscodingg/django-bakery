@@ -1,7 +1,7 @@
-models module
-=============
+Shop models module
+==================
 
-.. automodule:: models
+.. automodule:: shop.models
    :members:
    :undoc-members:
    :show-inheritance:

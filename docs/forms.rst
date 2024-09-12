@@ -1,7 +1,8 @@
-forms module
-============
+Shop forms module
+=================
 
-.. automodule:: forms
+.. automodule:: shop.forms
    :members:
    :undoc-members:
    :show-inheritance:
+   :no-index:

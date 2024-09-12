@@ -1,7 +1,8 @@
-tests module
-============
+Shop tests module
+=================
 
-.. automodule:: tests
+.. automodule:: shop.tests
    :members:
    :undoc-members:
    :show-inheritance:
+   :no-index:

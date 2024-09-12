@@ -52,6 +52,7 @@ For users who prefer using Docker, follow these steps:
 1. Ensure you are in the project root directory (where the `Dockerfile` is located).
 
 2. Build the Docker image using:
+   If you need to build a app use your own username an image name.
 
     ```bash
     docker build -t jade399/django-app:v1 .
@@ -60,6 +61,7 @@ For users who prefer using Docker, follow these steps:
 ### Running the Docker Container
 
 1. Run the Docker container with:
+   You can run your container like how I ran mine.
 
     ```bash
     docker run -p 8000:8000 jade399/django-app:v1
@@ -89,13 +91,8 @@ For users who prefer using Docker, follow these steps:
 
 ### Additional Docker Commands
 
-- **Push the Docker Image to Docker Hub:**
-
-    ```bash
-    docker push jade399/django-app:v1
-    ```
-
 - **Pull the Docker Image:**
+   If you already made your container you have to push your own image then pull.
 
     ```bash
     docker pull jade399/django-app:v1

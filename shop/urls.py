@@ -1,4 +1,5 @@
 from django.urls import path,include
+from django.contrib import admin
 from . import views
 
 """
@@ -20,6 +21,6 @@ URL patterns:
 urlpatterns = [
     path('', views.home, name='home'),
     path('auth/', include('user_authentication.urls')),
-    
+    path('admin/', admin.site.urls),   
 ]
 

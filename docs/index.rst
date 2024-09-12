@@ -16,4 +16,7 @@ documentation for details.
    :caption: Contents:
 
    modules
+   shop/shop
+   user_authentication/user_authentication
+
 

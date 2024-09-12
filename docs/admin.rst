@@ -1,7 +1,8 @@
-admin module
-============
+Shop admin module
+=================
 
-.. automodule:: admin
+.. automodule:: shop.admin
    :members:
    :undoc-members:
    :show-inheritance:
+   :no-index:

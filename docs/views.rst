@@ -1,7 +1,8 @@
-views module
-============
+Shop views module
+=================
 
-.. automodule:: views
+.. automodule:: shop.views
    :members:
    :undoc-members:
    :show-inheritance:
+   :no-index:
