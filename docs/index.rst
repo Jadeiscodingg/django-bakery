@@ -15,8 +15,10 @@ documentation for details.
    :maxdepth: 2
    :caption: Contents:
 
-   shop
-   user_authentication
+   modules
+   shop/shop
+   shop/modules
+   shop/shop.migrations
    user_authentication/modules
 
 

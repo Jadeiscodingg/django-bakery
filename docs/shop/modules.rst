@@ -39,6 +39,12 @@ shop.models module
    :undoc-members:
    :show-inheritance:
 
+.. autoclass:: shop.models.Food
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :no-index:
+
 shop.tests module
 -----------------
 .. automodule:: shop.tests
@@ -60,10 +66,4 @@ shop.views module
    :undoc-members:
    :show-inheritance:
 
-Module contents
----------------
-.. automodule:: shop
-   :members:
-   :undoc-members:
-   :show-inheritance:
 
